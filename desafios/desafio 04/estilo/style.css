@@ -45,12 +45,19 @@ a{
     display: flex;
     justify-content: right;
     align-items: center;
-    padding: 7px;
 }
 
 nav img{
     height: 50px;
     width: 50px;
     border-radius: 50%;
-
+    margin: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+    box-sizing: border-box;
+}
+nav img:hover{
+    border: 2px solid white;
+    transform: translate(-3px, -3px );
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.479);
+    transition: transform 0.4s;
 }
