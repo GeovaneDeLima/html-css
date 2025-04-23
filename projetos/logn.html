@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>página de login</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body {
+            height: 90vw;
+            background-color: lightgray;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+           
+        }
+        main{
+            background-color: rgba(174, 174, 174, 0.204);
+            
+            width: 400px;
+            height: 400px;
+            text-align: center;
+            border-radius: 20px;
+            border: 1px solid rgba(16, 16, 16, 0.179);
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.149);
+        }
+        h1{
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Login</h1>
+        <form action="" method="post">
+            <div class="email">
+                <input type="email" name="email" id="email" required placeholder="Username">
+            </div>
+            <div class="senha">
+                <input type="password" name="senha" id="senha" required placeholder="your password">
+            </div>
+            <div class="esque"> 
+                <input type="checkbox" name="nao" id="nao">
+                <label for="nao">Não me mostre mais</label>
+                <a href="#">esqueceu a senha?</a>
+            </div>
+            <div class="butao">
+                <input type="button" value="login">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
