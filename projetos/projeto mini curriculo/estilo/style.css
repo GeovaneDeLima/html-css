@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: font;
+    src: url("../fontes/Tagesschrift-Regular.ttf")
+}
+
+:root{
+    --cor1l: #B963E0;
+    --cor2: #AE2EDD;
+    --cor3: #6C00A2; 
+
+    --fontpadrao: arial, sans-serif;
+    --fontedestaque: 'font';
+}
