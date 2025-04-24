@@ -27,14 +27,15 @@
             border-radius: 20px;
             border: 1px solid rgba(16, 16, 16, 0.179);
             box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.149);
-            position: relative;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
         }
-        div.main {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
+        
+
         h1{
             font-family: Arial, Helvetica, sans-serif;
             font-size: 3em;
@@ -74,23 +75,21 @@
 </head>
 <body>
     <main>
-        <div class="main">
-            <h1>Login</h1>
-            <form action="" method="post">
-                <div class="email">
-                    <input class="nome" type="email" name="email" id="email" required placeholder="Username">
-                    <input class="nome" type="password" name="senha" id="senha" required placeholder="your password">
-                </div>
-                <div class="box">
-                    <input class="box" type="checkbox" name="nao" id="nao">
-                    <label for="nao">Não me mostre mais</label>
-                </div>
-                <a href="#">Esqueceu a senha?</a>
-                <div class="butao">
-                    <input class="button" type="button" value="Entrar">
-                </div>
-            </form>
-        </div>
+        <h1>Login</h1>
+        <form action="" method="post">
+            <div class="email">
+                <input class="nome" type="email" name="email" id="email" required placeholder="Username">
+                <input class="nome" type="password" name="senha" id="senha" required placeholder="your password">
+            </div>
+            <div class="box">
+                <input class="box" type="checkbox" name="nao" id="nao">
+                <label for="nao">Não me mostre mais</label>
+            </div>
+            <a href="#">Esqueceu a senha?</a>
+            <div class="butao">
+                <input class="button" type="button" value="Entrar">
+            </div>
+        </form>
     </main>
 </body>
 </html>
