@@ -22,31 +22,44 @@ body {
     background-color: var(--cor3);
     color: white;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     font-family: var(--fontpadrao);
 }
 main{
     display: grid;
     text-align: center;
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    grid-template-areas: 
+    'heder heder'
+    'perfil sobremim'
+    'aprendi sobremim'
+    'contato sobremim'
+    'redes redes';
 }
-
-section.perfil{
+header{
+    grid-area: heder;
+}
+header h1 {
+    margin: 20px;
+}
+aside.perfil{
     background-color: var(--cor2);
     width: 220px;
-    height: 300px;
+    height: 250px;
     text-align: center;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.57);
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.415);
-    margin: 30px;
+    grid-area: perfil;
 }
 h3 {
     border-radius: 20px 20px 0px 0px;
     padding: 7px;
     background-color: var(--cor1);
-    font-family: var(--fontedestaque);
 }
-section.perfil ul{
+aside.perfil ul{
     font-family: var(--fontpadrao);
     text-align: justify;
     list-style-position: inside;
@@ -54,26 +67,87 @@ section.perfil ul{
 
     
 }
-section.perfil img{
+aside.perfil img{
     height: 120px;
     width: 120px;
     margin: 5px;
     border-radius: 50%;
     border: 1px solid white;
 }
-section.abili{
+aside.abili{
+    grid-area: aprendi;
     background-color: var(--cor2);
     width: 220px;
     height: 150px;
-    text-align: center;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.57);
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.415);
-    margin: 30px;
+    list-style-position: inside;
 }
-section.abili ul{
+aside.abili ul{
     font-family: var(--fontpadrao);
-    text-align: justify;
     list-style-position: inside;
     padding: 15px 8px;
+    text-align: start;
+}
+section.cont{
+    grid-area: contato;
+    background-color: var(--cor2);
+    width: 220px;
+    height: 100px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.57);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.415);
+    padding: 8px;
+}
+section.cont p{
+    text-align: justify;
+
+    
+}
+section.cont h3{
+    margin: -7px -7px 0px -7px;
+}
+article.sobremim{
+    grid-area: sobremim;
+    background-color: var(--cor2);
+    text-align: justify;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.57);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.415);
+    padding: 8px;
+    width: 400px;
+}
+article.sobremim>p{
+    padding: 10px 8px 8px 8px;
+
+}
+article.sobremim h3{
+    margin: -7px -7px 0px -7px;
+    text-align: center;
+
+}
+section.redes{
+    grid-area: redes;
+    background-color: var(--cor2);
+    text-align: justify;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.57);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.415);
+    padding: 8px;
+    text-align: center;
+}
+section.redes h3{
+    margin: -7px -7px 0px -7px;
+    grid-area: h3;
+}
+section.redes img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.33);
+    box-sizing: border-box;
+}
+section.redes img:hover {
+    border: 2px solid white;
 }
