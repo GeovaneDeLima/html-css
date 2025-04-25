@@ -6,10 +6,74 @@
 }
 
 :root{
-    --cor1l: #B963E0;
-    --cor2: #AE2EDD;
-    --cor3: #6C00A2; 
+    --cor1: #525152;
+    --cor2: #424242;
+    --cor3: #222122; 
+    --cor4: #BC55DB;
 
     --fontpadrao: arial, sans-serif;
     --fontedestaque: 'font';
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: var(--cor3);
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    font-family: var(--fontpadrao);
+}
+main{
+    display: grid;
+    text-align: center;
+}
+
+section.perfil{
+    background-color: var(--cor2);
+    width: 220px;
+    height: 300px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.57);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.415);
+    margin: 30px;
+}
+h3 {
+    border-radius: 20px 20px 0px 0px;
+    padding: 7px;
+    background-color: var(--cor1);
+    font-family: var(--fontedestaque);
+}
+section.perfil ul{
+    font-family: var(--fontpadrao);
+    text-align: justify;
+    list-style-position: inside;
+    padding: 10px 8px;
+
+    
+}
+section.perfil img{
+    height: 120px;
+    width: 120px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+section.abili{
+    background-color: var(--cor2);
+    width: 220px;
+    height: 150px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.57);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.415);
+    margin: 30px;
+}
+section.abili ul{
+    font-family: var(--fontpadrao);
+    text-align: justify;
+    list-style-position: inside;
+    padding: 15px 8px;
 }
