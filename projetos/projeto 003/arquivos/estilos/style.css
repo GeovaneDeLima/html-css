@@ -23,11 +23,105 @@
     margin: 0px;
     padding: 0px;
 }
-body, html{
+ html{
     height: 100vh;
     width: 100vw;
 }
-section{
-    width: 90vw;
+body {
+    background-color: rgb(213, 211, 211);
 }
+main {
+   width: 100vw;
+}
+section{
+    width: 80vw;
+    margin: auto;
+}
+section.social {
+    background-color: var(--roxa2);
+    padding: 35px 10px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+section.social h3 {
+    font-size: 3em;
+    font-family: var(--font2);
+    display: inline;
+    line-height: 1em;
+    
+}
+section.social >h3.social1{
+    font-family: var(--font1);
+}
+strong.amarelo{
+    color: var(--ama2);
+}
+section.social img{
+    max-width: 70%;
+    margin-top: 25px;
+}
+section.social p {
+    font-size: 1.5em;
+}
+section.msg{
+    background-color: white;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+section.msg img {
+    max-width: 90%;
+    display: block;
+    margin: auto;
+}
+section.msg p {
+    font-size: 1.5em;
+    padding-left: 30px;
+}
+section.mes {
+    background-color: var(--ama2);
+    margin-top: 30px;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+section.mes p{
+    font-size: 1.5em;
+    width: 320px;
+    padding-bottom: 10px;
+
+}
+.mes img {
+    max-width: 45%;
+    margin-bottom: -25px;
+}
+
+section.gr {
+    background-color: var(--roxa1);
+    padding: 30px 10px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+.gr img {
+    max-width: 80%;
+    display: block;
+    margin: auto;
+
+}
+.gr h3 {
+    font-size: 1.5em;
+    padding-bottom: 15px;
+
+}
+.gr p{
+    font-size: 1.2em;
+    max-width: 300px;
+    margin: auto;
+    padding-top: 8px;
+}
+
 
