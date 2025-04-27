@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: font1;
+    src: url("../assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf");
+}
+@font-face {
+    font-family: font2;
+    src: url("../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf");
+}
+
+:root {
+    --roxa1: hsl(254, 88%, 90%);
+    --roxa2: hsl(256, 67%, 59%);
+    --ama1: hsl(31, 66%, 93%);
+    --ama2: hsl(39, 100%, 71%);
+
+    --font1: font1;
+    --font2: font2; 
+}
+
+*{ 
+    margin: 0px;
+    padding: 0px;
+}
+body, html{
+    height: 100vh;
+    width: 100vw;
+}
+section{
+    width: 90vw;
+}
+
