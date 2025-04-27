@@ -2,3 +2,43 @@
 
 /* DEMAIS MÍDIAS */
 
+@media print {
+    body {
+        background: white;
+    }
+    img#celular {display: none;}
+    img#print{display: block;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /*tablet*/
+    body{
+        background: url("../imagens/back-tablet.jpg") no-repeat;
+    }
+    img#celular{
+        display: none;
+
+    }
+    img#tablet{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {/* desktop*/
+    body{
+        background: url("../imagens/back-pc.jpg") no-repeat top center;
+        background-size: cover;
+    }
+    img#pc{ display: block;}
+    img#celular{ display: none;}
+
+}
+@media screen and (min-width: 1200px) {/* telas grandes*/
+    body{
+        background: url("../imagens/back-tv.jpg") no-repeat top center ;
+        background-size: cover;
+    }
+    img#celular{ display: none;}
+    img#tv{display: block;}
+
+    
+}
