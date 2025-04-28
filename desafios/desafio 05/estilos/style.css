@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/*
+#BABEBF
+#BF8360
+#403022
+#260F01
+#BF8360
+*/
+:root {
+    --cor1: #BABEBF;
+    --cor2: #e9bca2;
+    --cor3: #BF8360;
+    --cor4: #403022;
+    --cor5: #260F01;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html, body {
+    background-color: var(--cor4);
+    height: 100vh;
+    width: 100vw;
+
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    overflow: hidden;
+    background-color: white;
+    width: 250px;
+    height: 460px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.367);
+    transition: width 0.4s, height 0.4s;
+}
+div.img {
+    height: 45%;
+    width: 100%;
+    background: url("../imagens/pexels-nanamusic-31770195.jpg") no-repeat center center;
+    background-size: cover;
+}
+div.form {
+    padding: 5px 10px;
+}
+div.form h1{
+    text-align: center;
+    margin-bottom: 3px;
+    font-size: 2em;
+
+
+}
+div.form p{
+    display: block;
+    margin: auto;
+    font-size: 0.6em;
+    text-align: justify;
+    margin: 8px;
+
+}
+div.input {
+    display: flex;
+    margin: 3px;
+}
+input.entrada{
+    border: 1px solid black;
+    background-color: #e9bca28a;
+    border-radius: 0px 15px 15px 0px ;
+    padding: 5px;
+    margin-left: -2px;
+}
+
+div.input label {
+    border: 1px solid black;
+    background-color: var(--cor3);
+    padding: 0px 5px;
+    border-radius: 15px 0px 0px 15px ;
+
+}
+div.button1 {
+    margin-top: 15px;
+}
+input.button {
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    width: 210px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #e9bca260;
+
+}
+input.button:hover{
+    background-color: var(--cor4);
+    color: white;
+}
