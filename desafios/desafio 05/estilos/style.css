@@ -39,7 +39,7 @@ section{
     height: 460px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.367);
-    transition: width 0.4s, height 0.4s;
+    
 }
 div.img {
     height: 45%;
@@ -54,7 +54,7 @@ div.form h1{
     text-align: center;
     margin-bottom: 3px;
     font-size: 2em;
-
+   
 
 }
 div.form p{
@@ -63,6 +63,7 @@ div.form p{
     font-size: 0.6em;
     text-align: justify;
     margin: 8px;
+    
 
 }
 div.input {
@@ -75,7 +76,7 @@ input.entrada{
     border-radius: 0px 15px 15px 0px ;
     padding: 5px;
     margin-left: -2px;
-}
+}  
 
 div.input label {
     border: 1px solid black;
@@ -95,6 +96,7 @@ input.button {
     height: 30px;
     border-radius: 20px;
     background-color: #e9bca260;
+    
 
 }
 input.button:hover{
