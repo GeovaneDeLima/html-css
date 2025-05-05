@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .conteiner{
+            background-color: lightgray;
+            display: flex;
+            flex-flow: row wrap;
+
+        }
+        .itens{
+            border: 1px solid black;
+            background-color: blanchedalmond;
+            padding: 20px;
+        }
+    </style>
+    <title>Flexbox</title>
+</head>
+<body>
+    <!--anatomia dos itens
+    order-->
+    <div class="conteiner">
+        <div style="order: 3" class="itens">1</div>
+        <div style="order: -3"class="itens">2</div>
+        <div style="order: 0"class="itens">3</div>
+        <div style="order: 10"class="itens">4</div>
+        <div style="order: 5" class="itens">5</div>
+        <div style="order: 4" class="itens">6</div>
+        <div style="order: -9" class="itens">7</div>
+        <div style="order: 1" class="itens">8</div>
+    </div>
+</body>
+</html>
