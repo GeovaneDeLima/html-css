@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "utf-8";
 
 * {
     padding: 0px;
@@ -9,9 +9,11 @@ html{
     height: 100%;
 }
 body{
-    background-color: lightgray;}
+    background-color: rgb(149, 148, 148);
+}
 header{
-    background-color: rgb(122, 122, 122);
+    background-color: rgb(87, 87, 87);
+    min-height: 70px;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -26,7 +28,7 @@ header h1{
 nav a{
     text-decoration: none;
     color: white;
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(42, 41, 41);
     padding: 7px 10px;
     margin-left: 5px;
     border-radius: 7px;
@@ -35,48 +37,54 @@ nav a:hover{
     background-color: rgb(139, 134, 134);
     color: black;
 }
-body{
-    background-color: lightgrey;
-}
 main{
-    padding: 20px;
+    max-width: 700px;
     margin: auto;
     background-color: white;
 }
-main p{
-    margin-bottom: 10px;
-
-}
-section{
-    background-color: rgb(141, 139, 139);
+section.comum{
     padding: 20px;
-    border-radius: 20px;
+}
+section#media{
+    background-color: gray;
+    padding: 20px;
+}
+article.imgtx{
+    width: 100%;
+    margin: auto;
     display: flex;
-    flex-flow: row wrap;
-    align-content: center;
-    gap: 6px;
-    
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
 }
-div#tex02{
-    flex: 0 1 400px;
-    order: 3;
+div.text{
+    text-align: justify;
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 0;
 }
-section div#tex01{
-    flex: 0 1 400px;
-    order: 1;
+div.media{
+    align-self: flex-end;
+    flex: 1 1;
 }
 img{
-    width: 200px;
-    height: 200px;
-    flex: 0 1 400px;
-    
-    order: 2;
+    width: 400px;
+    height: 300px;
+
+}
+article.txvideo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    gap: 10px;
+
+
 }
 iframe{
-    flex: 0 1 400px;
-
-    height: 200px;
-    order: 4;
+    max-width: 400px;
 }
 
 @media screen and (max-width: 600px) {
