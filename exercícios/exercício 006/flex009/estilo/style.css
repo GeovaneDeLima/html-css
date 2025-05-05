@@ -10,89 +10,88 @@ html{
 }
 body{
     background-color: lightgray;}
+header{
+    background-color: rgb(122, 122, 122);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header h1{
+    margin: 5px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.47);
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(71, 71, 71);
+    padding: 7px 10px;
+    margin-left: 5px;
+    border-radius: 7px;
+}
+nav a:hover{
+    background-color: rgb(139, 134, 134);
+    color: black;
+}
+body{
+    background-color: lightgrey;
+}
+main{
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+}
+main p{
+    margin-bottom: 10px;
+
+}
+section{
+    background-color: rgb(141, 139, 139);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    gap: 6px;
+    
+}
+div#tex02{
+    flex: 0 1 400px;
+    order: 3;
+}
+section div#tex01{
+    flex: 0 1 400px;
+    order: 1;
+}
+img{
+    width: 200px;
+    height: 200px;
+    flex: 0 1 400px;
+    
+    order: 2;
+}
+iframe{
+    flex: 0 1 400px;
+
+    height: 200px;
+    order: 4;
+}
+
+@media screen and (max-width: 600px) {
     header{
-        background-color: rgb(122, 122, 122);
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
-    header h1{
-        margin: 5px;
-        color: white;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.47);
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
     nav a{
-        text-decoration: none;
-        color: white;
-        background-color: rgb(71, 71, 71);
-        padding: 7px 10px;
-        margin-left: 5px;
-        border-radius: 7px;
-    }
-    nav a:hover{
-        background-color: rgb(139, 134, 134);
-        color: black;
-    }
-    body{
-        background-color: lightgrey;
-    }
-    main{
-        padding: 20px;
-        max-width: 890px;
-        margin: auto;
-        background-color: white;
-    }
-    main p{
-        margin-bottom: 10px;
-
-    }
-    section{
-        background-color: rgb(141, 139, 139);
-        padding: 20px;
-        border-radius: 20px;
-        display: flex;
-        flex-flow: row wrap;
-        align-content: center;
-        gap: 6px;
-        
-    }
-    div#tex02{
-        flex: 0 1 400px;
-        order: 3;
-    }
-    section div#tex01{
-       flex: 0 1 400px;
-       order: 1;
-    }
-    img{
-        width: 200px;
-        height: 200px;
-        flex: 0 1 400px;
-        
-        order: 2;
-    }
-    iframe{
-        flex: 0 1 400px;
-    
-        height: 200px;
-        order: 4;
+        width: 400px;
+        text-align: center;    
     }
 
-    @media screen and (max-width: 600px) {
-        header{
-            flex-direction: column;
-        }
-        nav{
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-        nav a{
-            width: 400px;
-            text-align: center;    
-        }
     
-        
-    }
+}
